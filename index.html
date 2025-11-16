@@ -1,14 +1,33 @@
+
+<!-- File path: index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Calculator</title>
+    <title>Smart Calculator - Modern Web Calculator</title>
     <link rel="stylesheet" href="calculator.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="app-container">
+        <!-- Header -->
+        <div class="app-header">
+            <div class="header-content">
+                <div class="header-left">
+                    <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="4" y="2" width="16" height="20" rx="2"/>
+                        <path d="M8 6h8"/>
+                        <path d="M16 10H8"/>
+                        <path d="M16 14H8"/>
+                        <path d="M16 18H8"/>
+                    </svg>
+                    <h1 class="app-title">Smart Calculator</h1>
+                </div>
+                <div class="header-subtitle">Fast • Accurate • Reliable</div>
+            </div>
+        </div>
+
         <div class="calculator-wrapper">
             <!-- Calculator Panel -->
             <div class="calculator-panel">
@@ -20,9 +39,8 @@
                         <path d="M16 14H8"/>
                         <path d="M16 18H8"/>
                     </svg>
-                    <h1>Calculator</h1>
+                    <h2>Calculator</h2>
                 </div>
-
                 <!-- Display Screen -->
                 <div class="display-container">
                     <div class="display-screen">
@@ -30,33 +48,27 @@
                         <div id="operation-display" class="display-operation"></div>
                     </div>
                 </div>
-
                 <!-- Button Grid -->
                 <div class="button-grid">
                     <button class="btn btn-clear" data-action="clear">C</button>
                     <button class="btn btn-operation" data-action="operation" data-value="/">/</button>
                     <button class="btn btn-operation" data-action="operation" data-value="*">*</button>
                     <button class="btn btn-operation" data-action="operation" data-value="-">-</button>
-                    
                     <button class="btn btn-number" data-action="number" data-value="7">7</button>
                     <button class="btn btn-number" data-action="number" data-value="8">8</button>
                     <button class="btn btn-number" data-action="number" data-value="9">9</button>
                     <button class="btn btn-operation btn-plus" data-action="operation" data-value="+">+</button>
-                    
                     <button class="btn btn-number" data-action="number" data-value="4">4</button>
                     <button class="btn btn-number" data-action="number" data-value="5">5</button>
                     <button class="btn btn-number" data-action="number" data-value="6">6</button>
                     <button class="btn btn-equals" data-action="equals" rowspan="2">=</button>
-                    
                     <button class="btn btn-number" data-action="number" data-value="1">1</button>
                     <button class="btn btn-number" data-action="number" data-value="2">2</button>
                     <button class="btn btn-number" data-action="number" data-value="3">3</button>
-                    
                     <button class="btn btn-number btn-zero" data-action="number" data-value="0">0</button>
                     <button class="btn btn-decimal" data-action="decimal">.</button>
                 </div>
             </div>
-
             <!-- History Panel -->
             <div class="history-panel">
                 <div class="panel-header">
@@ -74,7 +86,6 @@
                         </svg>
                     </button>
                 </div>
-
                 <div class="history-content">
                     <div id="history-list" class="history-list">
                         <div class="no-history">
@@ -91,7 +102,6 @@
             </div>
         </div>
     </div>
-
     <script src="calculator.js"></script>
 </body>
 </html>
